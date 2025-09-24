@@ -179,4 +179,4 @@ jobs:
 
       - name: Terraform Destroy
         working-directory: IaC
-        run: terraform destroy -auto-approve -var="env=${{ env.ENV }}"
+        run: terraform destroy -auto-approve -var="env=${{ env.ENV }}" -var-file="variables/${{ env.ENV }}.tfvars"

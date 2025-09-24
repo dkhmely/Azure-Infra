@@ -1,4 +1,4 @@
-name: Deploy landing zone to Azure
+name: Deploy infra to Azure
 
 on:
   push:

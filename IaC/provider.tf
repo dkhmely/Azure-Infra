@@ -5,7 +5,7 @@ terraform {
       source  = "hashicorp/azurerm"
     }
   }
-    backend "azurerm" {
+  backend "azurerm" {
   }
 
 }

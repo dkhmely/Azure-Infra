@@ -5,10 +5,11 @@ terraform {
       source  = "hashicorp/azurerm"
     }
   }
+    backend "azurerm" {
+  }
 
 }
 
 provider "azurerm" {
   features {}
-  subscription_id = "70612abe-819d-4e7f-8b16-ef74e921f18b"
 }

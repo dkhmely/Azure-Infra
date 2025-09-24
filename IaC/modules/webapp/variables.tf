@@ -18,11 +18,6 @@ variable "sku_name" {
   description = ""
 }
 
-variable "sku_name" {
-  type        = string
-  description = ""
-}
-
 variable "db_host" {
   type        = string
   description = ""

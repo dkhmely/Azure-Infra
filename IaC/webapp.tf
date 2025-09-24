@@ -1,5 +1,5 @@
 module "voter-webapp" {
-  source                       = "./modules/webapp" #"git::https://github.com/dkhmely/tf-modules.git/modules/webapp?ref=1.0.0"
+  source                       = "git::https://github.com/dkhmely/tf-modules.git//modules/webapp?ref=1.0.0" #"./modules/webapp"
   name                         = "${var.application}-${var.env}"
   location                     = data.azurerm_resource_group.rg.location
   resource_group_name          = data.azurerm_resource_group.rg.name

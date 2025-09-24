@@ -1,5 +1,5 @@
 module "voter-webapp" {
-  source                       = "modules/webapp"
+  source                       = "./modules/webapp"
   name                         = "${var.application}-${var.env}"
   location                     = data.azurerm_resource_group.rg.location
   resource_group_name          = data.azurerm_resource_group.rg.name
